@@ -10,14 +10,13 @@
 
   </head>
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
+    <div class="-fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal"><a class="text-dark" href="index.html">SFR Reader</a></h5>
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="index.html#features">Возможности</a>
         <a class="p-2 text-dark" href="index.html#lic">Цены</a>
-        <a class="p-2 text-dark" href="#">Помощь</a>
-	<a class="p-2 text-dark" href="legal.html">Юридическая информация</a>
-        Контакты: <a class="p-2 text-dark" href="mailto:srgttv@gmail.com">srgttv@gmail.com</a>
+        <a class="p-2 text-dark">Помощь</a>
+        <nobr>Контакты: <a class="p-2 text-dark" href="mailto:srgttv@gmail.com">srgttv@gmail.com</a></nobr>
       </nav>
 
     </div>
@@ -35,22 +34,23 @@
 
 <p>В ручном режиме при каждом сканировании чипа программа предлагает ввести имя участника. 
 
-Для ускорения ввода в SFR Reader можно загрузить список участников, и пользователь по первым буквам найдет и выберет нужного.
-Если загруженный список содержит номера чипов, то участник привяжется автоматически.</p>
+Для ускорения ввода в SFR Reader можно <a href="#upload">загрузить список</a> участников из текстового файла, или базы SFR Event Centre, 
+и пользователь по первым буквам найдет и выберет нужного. Если загруженный список содержит номера чипов, то участник 
+привяжется автоматически.</p>
 <p>Готовить список удобно в Excel или его аналогах, сохраняя в формате CSV.</p>
 
 <a href="names.txt">Образец файла</a>:
-<pre style="background-color: #f0f1f2 !important;">
-// Все, что начинается с двух дробных черт -- это комментарий
-// Формат простой: одна строка -- одна команда
+<pre style="background-color: #f0f1f2 !important; padding: 0.5rem;">
+// Все, что начинается с двух дробных черт &mdash; это комментарий
+// Формат простой: одна строка &mdash; одна команда
 
 // Эти команды придется выбирать из списка
 Стремительные
 Ни шагу бегом
 Медленные и печальные
 
-// А тут пограмма сама поймет: 32-ой чип был у Детей болот, 36-ой -- у Косенкова.
-// Все, что до точки с запятой -- номер, все, что после -- название.
+// А тут пограмма сама поймет: 32-ой чип был у Детей болот, 36-ой &mdash; у Косенкова.
+// Все, что до точки с запятой &mdash; номер, все, что после &mdash; название.
 
 31;Chasing daylight
 32;Дети болот
@@ -63,6 +63,12 @@
 
 </section>
 
+<section id="upload"><h2>Загрузка списка участников</h2>
+<p>Для загрузки списка нужно перенести файл на телефон (например через почту, мессенджер, USB-провод или Bluetooth), найти 
+и открыть его на телефоне. В ответ на вопрос, чем открывать файл, выбрать SFR Reader.</p> 
+
+<p>После этого SFR Reader напишет, сколько команд удалось загрузить, или выдаст сообщение об ошибке.</p>
+</section>
 
 <!--section><h2>Запись чипов</h2>
 </section>-->
@@ -74,7 +80,7 @@
   <li>Затем к телефону прикладывается чип</li>
   <li>Записанный чип прикладывается к программируемой станции.</li>
 </ol>
-Характерное время -- менее 1 секунды.
+Характерное время &ndash; менее 1 секунды.
 </section>
 
 
@@ -92,6 +98,14 @@
 <section><h2>Остались вопросы?</h2>
 Пишите: <a href="mailto:srgttv@gmail.com">srgttv@gmail.com</a>
 </section>
+</div>
+
+
+<div class="-fixed-bottom d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mt-4 bg-white border-top box-shadow">
+  <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="legal.html">Юридическая информация</a>
+  </nav>
 </div>
 </body>
 </html>

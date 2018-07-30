@@ -7,10 +7,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
 
-
   </head>
+
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <div class="-fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal">SFR Reader</h5>
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#features">Возможности</a>
@@ -18,8 +18,7 @@
         <a class="p-2 text-dark" href="#testimonials">Отзывы</a>
         <a class="p-2 text-dark" href="help.html">Помощь</a>
         <a class="p-2 bg-success text-light" href="https://westra.ru/cross/sfrReader2.apk">Загрузить</a>
-        <a class="p-2 text-dark" href="legal.html">Юридическая информация</a>
-        Контакты: <a class="p-2 text-dark" href="mailto:srgttv@gmail.com">srgttv@gmail.com</a>
+        <nobr>Контакты: <a class="p-2 text-dark" href="mailto:srgttv@gmail.com">srgttv@gmail.com</a></nobr>
       </nav>
 
     </div>
@@ -37,6 +36,7 @@
 <ul>
   <li>Считывание чипов участника</li>
   <li>Привязка результата к имени участника (названию команды)</li>
+  <li>Импорт списков участников из текстовых файлов и баз SFR Event Centre</li>
   <li>Экспорт результатов в формате CSV (Excel, OpenOffice)</li>
   <li>Очистка чипов и присвоение им номеров, ведение журнала работы с чипами</li>
   <li>Программирование станций отметки</li>
@@ -62,28 +62,41 @@
   <tr><td class="text-left">Экспорт журнала работы с чипами в CSV</td><th>-</th> <th>+</th> <th>+</th></tr>
   <tr><td class="text-left">Программирование станций отметки</td><th>-</th> <th>-</th> <th>+</th></tr>
 </tbody>
-<tfoot><tr><th>&nbsp;</th><th style="vertical-align:middle;">Бесплатно</th> <th>300 р/мес<br/>или<br/>1000 р/год</th> <th>500 р/мес<br/>или<br/>3000 р/год</th></tr></tfoot>
+<tfoot><tr><th>&nbsp;</th><th style="vertical-align:middle;">Бесплатно</th> <th><nobr>300 р/мес</nobr><br/>или<br/><nobr>1000 р/год</nobr></th> <th><nobr>500 р/мес</nobr><br/>или<br/><nobr>3000 р/год</nobr></th></tr></tfoot>
 </table>
 
-Для получения лицензий пишите: <a id="cta" href="mailto:srgttv@gmail.com?subject=Лицензии%20на%20SFR%20Reader">srgttv@gmail.com</a>
+<p class="text-center pt-4 pb-4 bg-info text-light"><a href="https://westra.ru/cross/sfrReader2.apk" class="text-light p-3">Загрузить SFR Reader</a></p>
+<p>Для получения лицензий пишите: <a id="cta" href="mailto:srgttv@gmail.com?subject=Лицензии%20на%20SFR%20Reader">srgttv@gmail.com</a></p>
 </section>
 
 <section><h2 id="testimonials">Отзывы</h2>
-<p>Очень удобная и незаменимая программа. Вот, представьте, ставишь дистанцию,
-но понимаешь, что нумерацию КП надо изменить (в рогейне она очень важна!).
-Раньше приходилось всегда таскать с собой ноутбук для перепрограммирования
-станций, а сейчас - не надо, проблема в прошлом. </p><p>Или просто судишь
-квест/ориентирование/рогейн/соревнования по туризму. В любой момент, в
-любом месте к тебе может подойти участник с вопросом, почему у меня
-такой-то результат, не буду ли я снят и т.д. Ты прикладываешь телефон к
-чипу и отвечаешь на любой вопрос (сплит часто теряется, свой чип-редко!). </p><p>А
-про судейство тренировок и мини-стартов - так это вообще решение на
-миллион! В любом месте с одним телефоном можно запустить старт, принять финиш,
-подвести итог и наградить всех кого нужно, не важно, какой тип дистанции,
-заданное направление, выбор или рогейн. </p><p>Рекомендую организаторам и тренерам!</p>
-  <p>Артём Лавринович, <small>главный идеолог кубка &laquo;<a href="https://vk.com/rogaining">Золотой Маршрут</a>&raquo; по рогейну,
+ <!--div class="card shadow-sm" style="margin-bottom: 2rem;">
+    <div class="card-body">
+      <p>Возможность за 3 минуты собрать времена 20 команд и увидеть их в Экселе &mdash; просто чудо.</p>
+Галина Политова, <small>главный секретарь <a href="http://westra.ru/activity/crosspohod/">кросс-похода</a> Вестры</small>
+    </div>
+  </div-->
+
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <p>Очень удобная и незаменимая программа. Вот, представьте, ставишь дистанцию,
+      но понимаешь, что нумерацию КП надо изменить (в рогейне она очень важна!).
+      Раньше приходилось всегда таскать с собой ноутбук для перепрограммирования
+      станций, а сейчас - не надо, проблема в прошлом. </p><p>Или просто судишь
+      квест/ориентирование/рогейн/соревнования по туризму. В любой момент, в
+      любом месте к тебе может подойти участник с вопросом, почему у меня
+      такой-то результат, не буду ли я снят и т.д. Ты прикладываешь телефон к
+      чипу и отвечаешь на любой вопрос (сплит часто теряется, свой чип &ndash; редко!). </p><p>А
+      про судейство тренировок и мини-стартов &mdash; так это вообще решение на
+      миллион! В любом месте с одним телефоном можно запустить старт, принять финиш,
+      подвести итог и наградить всех кого нужно, не важно, какой тип дистанции,
+      заданное направление, выбор или рогейн. </p>
+      <p>Рекомендую организаторам и тренерам!</p>
+    
+      Артём Лавринович, <small>главный идеолог кубка &laquo;<a href="https://vk.com/rogaining">Золотой Маршрут</a>&raquo; по рогейну,
 организатор мероприятий</small>                                                 
-</p>
+  </div>
+
 </section>
 
 
@@ -98,5 +111,13 @@
 
 
     </div>
+
+  <div class="-fixed-bottom d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mt-4 bg-white border-top box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 bg-success text-light" href="https://westra.ru/cross/sfrReader2.apk">Загрузить</a>
+      <a class="p-2 text-dark" href="legal.html">Юридическая информация</a>
+    </nav>
+  </div>
 </body>
 </html>
