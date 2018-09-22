@@ -1,1 +1,6 @@
-section+section { margin-top: 4rem; }
+section+section { margin-top: 5rem; }
+.m-p2 { padding-top: .313rem !important; padding-bottom: .313rem !important;}
+
+img.logo {width: 1.7rem; height: 1.7rem; margin-right: 0.3em; }
+
+
