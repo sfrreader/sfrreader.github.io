@@ -28,7 +28,7 @@
         <input type="hidden" name="receiver" value="410016743804813"/>
         <input type="hidden" name="formcomment" id="formcomment" value=""/>
         <input type="hidden" name="short-dest" id="short-dest" value=""/>
-        <input type="hidden" name="successURL" value="success.html"/>
+        <input type="hidden" name="successURL" value="https://sfrreader.github.io/success.html"/>
 
 
         <input type="hidden" name="sum" id="sum"/>
@@ -214,15 +214,16 @@ function parsePair(key, value) {
 function onSubmit() {
 
     var s = new State();
+    var owner = $get('sfr-owner').value || "";
     $get('sum').value = s.amount();
 
-    var val = "Лицензия SFR Reader: " + s.caption();
+    var val = "Лицензия SFR Reader: " + s.caption() + " для " + owner;
     $get('formcomment').value = val;
     $get('short-dest').value = val;
     $get('targets').value = val;
 
     var lbl = s.getYaLabel();
-    $get('label').value = lbl + ($get('sfr-owner').value || "").substring(0, 64 - lbl.length);
+    $get('label').value = lbl + (owner).substring(0, 64 - lbl.length);
 
     return true;
 }
