@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Оплата</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shorcut icon" type="image/svg+xml" href="images/favicon.svg">
+
+<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="https://westra.ru/cross/ajax.php?m=css" rel="stylesheet">
+
+  </head>
+<body>
+<div class="-fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><a class="text-dark" href="index.html"><img class="logo" src="images/favicon.svg"/>SFR Reader</a></h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="index.html#lic">Цены</a>
+        <nobr>Контакты: <a class="p-2 text-dark" href="mailto:srgttv@gmail.com">srgttv@gmail.com</a></nobr>
+    </nav>
+</div>
+
+<div class="container" style="max-width: 40em;">
+
+    <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml" onsubmit="return onSubmit(event);">
+
+        <input type="hidden" name="receiver" value="410016743804813"/>
+        <input type="hidden" name="formcomment" id="formcomment" value=""/>
+        <input type="hidden" name="short-dest" id="short-dest" value=""/>
+        <input type="hidden" name="successURL" value="success.html"/>
+
+
+        <input type="hidden" name="sum" id="sum"/>
+        <input type="hidden" name="label" id="label" value=""/>
+
+        <input type="hidden" name="quickpay-form" value="shop"/>
+        <input type="hidden" name="targets" id="targets" value="пожертвование на развитие программы"/>
+
+        <input type="hidden" name="need-fio" value="false"/>
+        <input type="hidden" name="need-email" value="false"/>
+        <input type="hidden" name="need-phone" value="false"/>
+        <input type="hidden" name="need-address" value="false"/>
+
+
+        <input type="hidden" name="comment" value="">
+
+
+        <label class="mt-3 mb-3"><h4>Оплата лицензии</h4></label>
+        <div class="form-row">
+            <div class="col-sm-4 mb-3">
+                <select class="form-control" id="type">
+                    <option value="basic">Базовая</option>
+                    <option value="ext">Расширенная</option>
+                </select>
+            </div>
+
+            <div class="col-sm-3 mb-3">
+                <select class="form-control" id="duration">
+                    <option value="month">на месяц</option>
+                    <option value="year">на год</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group" id="note" style="margin-top: -1rem;">
+            <small class="form-text text-muted">При первом получении такой лицензии потребуется <a href="help.html#verify">подтверждение</a>, что у вас есть станция сопряжения.<br/>По всем вопросам пишите: <a href="mailto:srgttv@gmail.com">srgttv@gmail.com</a></small>
+         </div>
+
+
+        <div class="form-group">
+            <label for="sfr-owner">Владелец <span class="text-danger">*</span></label>
+            <input type="text" id="sfr-owner" value="" data-type="email" required class="form-control col-sm-7" placeholder="owner@somewhere.com"/>
+            <small class="form-text text-muted">Можно посмотреть в меню "О программе"</small>
+        </div>
+        <div class="form-group ">
+            <label for="amnt">Сумма</label>
+            <input type="text" id="amnt" name="amnt" value="0" data-type="number" readonly class="form-control col-sm-4"/>
+        </div>
+
+        <label class="mb-1">Оплата</label>
+        <div class="form-group">
+            <div class="form-check form-check-inline">
+                <label class="form-check-label"><input type="radio" name="paymentType" value="AC" class="form-check-input" checked>Банковской картой</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label"><input type="radio" name="paymentType" value="PC" class="form-check-input">Яндекс.Деньгами</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label"><input type="radio" name="paymentType" value="MC" class="form-check-input">С мобильного телефона</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2 mt-3" value="Перевести">Перевести</button>
+    </form>
+
+<!--section><h2>Остались вопросы?</h2>
+Пишите: <a href="mailto:srgttv@gmail.com">srgttv@gmail.com</a>
+</section-->
+
+</div>
+
+<div class="-fixed-bottom d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mt-4 bg-white border-top box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="legal.html">Юридическая информация</a>
+    </nav>
+</div>
+
+<script>
+"use strict";
+
+function $get(id) {
+  return document.getElementById(id);
+}
+
+var State = function() {
+    this._type = $get('type').value || 'basic';
+    this._duration = $get('duration').value || 'year';
+};
+
+State.prototype = {
+    _price : {
+        basic: {month: 300, year: 1000},
+        ext: {month: 500, year: 3000},
+        test: {month: 2, year: 3}
+    },
+
+    _typeCap: {basic: "базовая", ext: "расширенная", test: "тестовая"},
+    _durCap: {year: "на год", month: "на месяц"},
+
+    amount: function() {
+        return this._price[this._type][this._duration];
+    },
+
+    isShortExtended: function() {
+        return this._type == 'ext' && this._duration == 'month';
+    },
+
+    caption: function() {
+        return this._typeCap[this._type] + ' ' + this._durCap[this._duration];
+    },
+
+    getYaLabel: function() {
+        return "sfr_ya_" + this._type + '_' + this._duration + '_' + (new Date()).getTime() + '_';
+    }
+};
+
+function onChange() {
+    var s = new State();
+    $get('amnt').value = s.amount() + " руб";
+    var note = $get('note');
+    note.style.display = s.isShortExtended() && !note.___verified ? '' : 'none';
+}
+
+function init() {
+    $get('type').addEventListener('change', onChange, false);
+    $get('duration').addEventListener('change', onChange, false);
+
+    parseHash(window.location.hash || "");
+    onChange();
+}
+
+function parseHash(hash) {
+    if ((hash || '') == '')
+        return;
+
+    var parts = hash.split('&');
+    if (!parts)
+        return;
+
+    var p2;
+    for (var i = 0; i < parts.length; i++) {
+        p2 = parts[i].split('=');
+        if (p2.length == 1)
+            parsePair('', p2[0]);
+        else if (p2.length > 1)
+            parsePair(p2[0], p2[1]);
+    }
+}
+
+function parsePair(key, value) {
+    if (key.indexOf('#') == 0)
+        key = key.substring(1);
+
+    if (value.indexOf('#') == 0)
+        value = value.substring(1);
+
+    if (key == 's' || key == '') {
+        if (value.length > 0) {
+            var el = $get('type');
+            if (value.charAt(0) == 't') {
+                var opt = document.createElement("option");
+                opt.text = 'test';
+                opt.value = 'test';
+                el.add(opt, 2);
+                el.selectedIndex = 2;
+            }
+            else
+                el.selectedIndex = value.charAt(0) == 'e' ? 1 : 0;
+        }
+        $get('duration').selectedIndex = value.length > 1 && value.charAt(1) == 'y' ? 1 : 0;
+        $get('note').___verified = value.length > 2 && value.charAt(2) == 'v';
+        return;
+    }
+
+    if (key == 'owner') {
+        $get('sfr-owner').value = value;
+        return;
+    }
+}
+
+function onSubmit() {
+
+    var s = new State();
+    $get('sum').value = s.amount();
+
+    var val = "Лицензия SFR Reader: " + s.caption();
+    $get('formcomment').value = val;
+    $get('short-dest').value = val;
+    $get('targets').value = val;
+
+    var lbl = s.getYaLabel();
+    $get('label').value = lbl + ($get('sfr-owner').value || "").substring(0, 64 - lbl.length);
+
+    return true;
+}
+
+init();
+
+</script>
+</body>
+</html>
