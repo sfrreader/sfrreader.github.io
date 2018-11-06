@@ -1,7 +1,31 @@
-section+section { margin-top: 5rem; }
-h2 {margin-bottom: 0.75rem; }
-.m-p2 { padding-top: .313rem !important; padding-bottom: .313rem !important;}
+section+section { 
+    margin-top: 5rem; 
+}
 
-img.logo {width: 1.7rem; height: 1.7rem; margin-right: 0.3em; }
+h2 {
+    margin-bottom: 0.75rem; 
+}
+
+.m-p2 { 
+    padding-top: .313rem !important; 
+    padding-bottom: .313rem !important;
+}
+
+img.logo { 
+    width: 1.7rem; 
+    height: 1.7rem; 
+    margin-right: 0.3em; 
+}
+
+table.wide-content {
+    overflow-x: auto;
+}
+    
+@media (max-width: 768px) {
+    table.wide-content {
+        display: block;
+    }    
+}
+
 
 
