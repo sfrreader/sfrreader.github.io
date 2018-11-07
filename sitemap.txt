@@ -2,31 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>https://sfrreader.github.io/index.html</loc>
-	<lastmod>2018-11-01T01:10:16+04:00</lastmod>
+	<lastmod>2018-11-07T12:20:00+04:00</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://sfrreader.github.io/help.html</loc>
-	<lastmod>2018-11-01T01:10:16+04:00</lastmod>
+	<lastmod>2018-11-07T12:20:00+04:00</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://sfrreader.github.io/legal.html</loc>
-	<lastmod>2018-11-01T01:10:16+04:00</lastmod>
+	<lastmod>2018-11-07T12:20:00+04:00</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://sfrreader.github.io/donate.html</loc>
+	<lastmod>2018-11-07T12:20:00+04:00</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>1.0</priority>
 </url>
 
-<!--
-
-<url>
-    <loc>https://sfrreader.github.io/description.html</loc>
-    <lastmod>2018-10-26T16:44:16+04:00</lastmod> 
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-</url>
---><!-- YYYY-mm-dd -->
 
 </urlset>
