@@ -1,3 +1,11 @@
+.container section:first-child,{
+    margin-top: 3rem;
+}
+
+.container section:last-child {
+    margin-bottom: 3rem;
+}
+
 section+section { 
     margin-top: 5rem; 
 }
