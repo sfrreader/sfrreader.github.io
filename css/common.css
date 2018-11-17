@@ -1,3 +1,12 @@
+.fixed-top nav > a:last-of-type,
+.-fixed-top nav > a:last-of-type {
+    margin-right: 0.5rem;
+}
+
+nav nobr {
+    margin-left: 0.5rem
+}
+
 .container section:first-child {
     margin-top: 3rem;
 }
