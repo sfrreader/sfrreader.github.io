@@ -12,6 +12,16 @@
 
 </url>
 <url>
+	<loc>https://sfrreader.github.io/updates.html</loc>
+	<lastmod>2018-12-08T15:40:00+04:00</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>1.0</priority>
+        <xhtml:link 
+               rel="alternate"
+               hreflang="ru"
+               href="https://sfrreader.github.io/updates.html"/>
+</url>
+<url>
 	<loc>https://sfrreader.github.io/help.html</loc>
 	<lastmod>2018-11-23T03:20:00+04:00</lastmod>
 	<changefreq>daily</changefreq>
@@ -41,16 +51,5 @@
                hreflang="ru"
                href="https://sfrreader.github.io/donate.html"/>
 </url>
-<url>
-	<loc>https://sfrreader.github.io/updates.html</loc>
-	<lastmod>2018-11-23T03:20:00+04:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://sfrreader.github.io/updates.html"/>
-</url>
-
 
 </urlset>
