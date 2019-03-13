@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <title>SFR Reader help</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" type="image/svg+xml" href="../images/favicon.svg">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_EN" />
+    <meta property="og:site_name" content="SFR Reader" />
+    <meta property="og:image" content="https://sfrreader.github.io/images/favicon.svg" />
+
+    <meta property="og:url" content="https://sfrreader.github.io/help.html" />
+    <meta property="og:title" content="SFR Reader help" />
+    <meta property="og:description" content="SFR Reader Extended licence obtaining. Participants list upload. Cards reading and base unit programming." />
+
+<!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="https://westra.ru/cross/ajax.php?m=css" rel="stylesheet">
+
+  </head>
+<body>
+    <div class="-fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal"><a class="text-dark" href="index.html"><img class="logo" src="../images/favicon.svg"/>SFR Reader</a></h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="../index.html#features">Features</a>
+        <a class="p-2 text-dark" href="../index.html#lic">Pricing</a>
+        <a class="p-2 text-dark" href="../donate.html">Payment</a>
+        <a class="p-2 text-dark">Help</a>
+        <nobr>Contacts:<a class="p-2 text-dark" href="mailto:srgttv@gmail.com">srgttv@gmail.com</a></nobr>
+        <a class="p-2 text-danger" href="../help.html">Rus</a>
+      </nav>
+
+    </div>
+
+    <div class="container">
+
+<section id="verification"><h2>Extended licence obtaining</h2>
+<p>Following the agreement with SFR System manufacturer, to embarrace unauthorised base unit programming and competition vandalism, one willing to obtain his first <b>short-term extended</b> license should provide proof of SFR base unit ownership.</p>
+<p>Picture with base unit and "SFR Reader" text sent to the srgttv@gmail.com would be a valid proof.</p>
+</section>
+
+<section id="read"><h2>Reading card data</h2>
+<p>When launched, SFR Reader would propose to turn NFC on. Than you just should apply card to the smartphone to read data.</p>
+<p>Applying the same card for the second time would result in message "The data are read already".</p>
+</section>
+
+<section id="connect"><h2>Setting card's owner</h2>
+
+<p>SFR Reader allows to set team/participant name for each card it reads.</p>
+
+<p>One can set it manually after each reading operation, or in semi- and even fully automatic way. 
+
+To speed the process up one can <a href="#upload">upload participant list</a> from a text file (UTF-8 encoded) or Event Centre database, to choose correct name from the list.
+If the participant in the list has a card number, than SFR reader would automatically use that name for the card.</p>
+<p>You can use Excel or similar program (Open / Libre Office) to prepare the list and save it as CSV-file.</p>
+
+<a href="names.txt">Sample</a>:
+<pre style="background-color: #f0f1f2 !important; padding: 0.5rem;">
+// Line starting with 2 slashes is a comment.
+// The file format is trivial: 
+// One line&nbsp;&mdash; one team
+
+// These teams should be  
+// chosen manually
+The Furious
+Just walking
+Quantum snails
+
+// For the following teams
+// SFR Reader would use
+// card #32 for Swamp kids, 
+// and card #34 for John Doe.
+// Text befor semicolon is a card number, 
+// text after it is a team name.
+
+31;Chasing daylight
+32;Swamp kids
+33;Humpty Dumpty
+34;John Doe
+35;Heather Jones
+36;Salmon - 1
+37;Cheetah - 7</pre>
+
+</section>
+
+<section id="upload"><h2>Participants list upload</h2>
+<p>To import participants list upload file to the smartphone (via e-mail, messenger, USB or Bluetooth), choose "Load teams..." menu item, and find uploaded file.</p> 
+
+<p>SFR Reader would display number of uploaded teams and proceed to the teams list, or show an error message for ill-formed files.</p>
+</section>
+
+<section id="station"><h2>Base unit programming</h2>
+Base units are programmed in 3 steps using a master-card.<br/>
+<ol>
+  <li>Choose what to program.</li>
+  <li>Apply card to the phone.</li>
+  <li>Apply card to the base unit.</li>
+</ol>
+Average programming time: less than 1 second.
+</section>
+
+
+<section id="known"><h2>Known issues</h2>
+<p>Some smartphones are known to have very slow NFC data transfer (1-2 seconds per 1 punch, instead of regular 30-100 msec).</p>
+<p>The problem models are:</p>
+<ul>
+  <li>Alcatel POP 4S (5095Y)</li>
+  <li>Sony Experia Compact Z3 (D5803)</li>
+</ul>
+
+</section>
+
+
+<section><h2>Got questions?</h2>
+E-mail <a href="mailto:srgttv@gmail.com">srgttv@gmail.com</a>
+</section>
+</div>
+
+
+  <div class="-fixed-bottom d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mt-4 bg-light border-top box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 bg-success text-light" href="https://westra.ru/cross/sfrReader2.apk">Download</a>
+      <a class="p-2 text-dark" href="../updates.html">Updates</a>
+      <a class="p-2 text-dark" href="../legal.html">Legal information</a>
+    </nav>
+  </div>
+</body>
+</html>
