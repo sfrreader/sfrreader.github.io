@@ -23,13 +23,17 @@
 </url>
 <url>
 	<loc>https://sfrreader.github.io/help.html</loc>
-	<lastmod>2018-11-23T03:20:00+04:00</lastmod>
+	<lastmod>2019-03-11T01:50:00+04:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>1.0</priority>
         <xhtml:link 
                rel="alternate"
                hreflang="ru"
                href="https://sfrreader.github.io/help.html"/>
+        <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://sfrreader.github.io/en/help.html"/>
 </url>
 <url>
 	<loc>https://sfrreader.github.io/legal.html</loc>
