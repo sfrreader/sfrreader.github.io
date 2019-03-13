@@ -20,6 +20,10 @@
                rel="alternate"
                hreflang="ru"
                href="https://sfrreader.github.io/updates.html"/>
+        <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://sfrreader.github.io/en/updates.html"/>
 </url>
 <url>
 	<loc>https://sfrreader.github.io/help.html</loc>
