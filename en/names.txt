@@ -1,0 +1,19 @@
+// Line starting with 2 slashes is a comment.
+// The file format is trivial: one line — one team
+
+// These teams should be chosen manually
+The Furious
+Just walking
+Quantum snails
+
+// For the following teams SFR Reader would use
+// card #32 for Swamp kids, and card #34 for John Doe.
+// Text befor semicolon is a card number, text after the semicolon is a team name.
+
+31;Chasing daylight
+32;Swamp kids
+33;Hampty Dampty
+34;John Doe
+35;Heather Jones
+36;Salmon - 1
+37;Cheetah - 7
