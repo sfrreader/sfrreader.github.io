@@ -2,18 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
 	<loc>https://sfrreader.github.io/</loc>
-	<lastmod>2018-11-23T03:20:00+04:00</lastmod>
+	<lastmod>2019-03-25T02:30:00+04:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>1.0</priority>
         <xhtml:link 
                rel="alternate"
                hreflang="ru"
                href="https://sfrreader.github.io/"/>
+        <xhtml:link 
+               rel="alternate"
+               hreflang="ru"
+               href="https://sfrreader.github.io/index.html"/>
+        <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://sfrreader.github.io/en/index.html"/>
+
 
 </url>
 <url>
 	<loc>https://sfrreader.github.io/updates.html</loc>
-	<lastmod>2019-03-13T00:30:00+04:00</lastmod>
+	<lastmod>2019-03-25T02:30:00+04:00</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>1.0</priority>
         <xhtml:link 
@@ -27,7 +36,7 @@
 </url>
 <url>
 	<loc>https://sfrreader.github.io/help.html</loc>
-	<lastmod>2019-03-11T01:50:00+04:00</lastmod>
+	<lastmod>2019-03-25T02:30:00+04:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>1.0</priority>
         <xhtml:link 
