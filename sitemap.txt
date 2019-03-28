@@ -1,76 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
-	<loc>https://sfrreader.github.io/</loc>
-	<lastmod>2019-03-25T02:30:00+04:00</lastmod>
-	<changefreq>daily</changefreq>
-	<priority>1.0</priority>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://sfrreader.github.io/"/>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://sfrreader.github.io/index.html"/>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="en"
-               href="https://sfrreader.github.io/en/index.html"/>
-
-
+	<loc>https://sfrreader.github.io/</loc>		<changefreq>daily</changefreq> <priority>1.0</priority>
+	<lastmod>2019-03-29T02:30:00+04:00</lastmod>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/"/>
+        <xhtml:link rel="alternate" 
+		hreflang="ru" href="https://sfrreader.github.io/index.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="en" href="https://sfrreader.github.io/en/index.html"/>
 </url>
 <url>
-	<loc>https://sfrreader.github.io/updates.html</loc>
+	<loc>https://sfrreader.github.io/en/index.html</loc>	<changefreq>daily</changefreq> <priority>1.0</priority>
+	<lastmod>2019-03-29T02:30:00+04:00</lastmod>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/"/>
+        <xhtml:link rel="alternate" 
+		hreflang="ru" href="https://sfrreader.github.io/index.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="en" href="https://sfrreader.github.io/en/index.html"/>
+</url>
+
+<url>
+	<loc>https://sfrreader.github.io/updates.html</loc>	<changefreq>weekly</changefreq> <priority>1.0</priority>
 	<lastmod>2019-03-28T02:30:00+04:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://sfrreader.github.io/updates.html"/>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="en"
-               href="https://sfrreader.github.io/en/updates.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/updates.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="en" href="https://sfrreader.github.io/en/updates.html"/>
 </url>
 <url>
-	<loc>https://sfrreader.github.io/help.html</loc>
-	<lastmod>2019-03-25T02:30:00+04:00</lastmod>
-	<changefreq>daily</changefreq>
-	<priority>1.0</priority>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://sfrreader.github.io/help.html"/>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="en"
-               href="https://sfrreader.github.io/en/help.html"/>
+	<loc>https://sfrreader.github.io/en/updates.html</loc> 	<changefreq>weekly</changefreq> <priority>1.0</priority>
+	<lastmod>2019-03-28T02:30:00+04:00</lastmod>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/updates.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="en" href="https://sfrreader.github.io/en/updates.html"/>
+</url>
+
+<url>
+	<loc>https://sfrreader.github.io/help.html</loc>	<changefreq>daily</changefreq> <priority>1.0</priority>
+	<lastmod>2019-03-29T02:30:00+04:00</lastmod>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/help.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="en" href="https://sfrreader.github.io/en/help.html"/>
 </url>
 <url>
-	<loc>https://sfrreader.github.io/legal.html</loc>
-	<lastmod>2019-03-26T02:30:00+04:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.3</priority>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://sfrreader.github.io/legal.html"/>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="en"
-               href="https://sfrreader.github.io/en/legal.html"/>
+	<loc>https://sfrreader.github.io/en/help.html</loc>	<changefreq>daily</changefreq> <priority>1.0</priority>
+	<lastmod>2019-03-29T02:30:00+04:00</lastmod>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/help.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="en" href="https://sfrreader.github.io/en/help.html"/>
+</url>
+
+<url>
+	<loc>https://sfrreader.github.io/legal.html</loc>	<changefreq>weekly</changefreq> <priority>0.3</priority>
+	<lastmod>2019-03-29T02:30:00+04:00</lastmod>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/legal.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="en" href="https://sfrreader.github.io/en/legal.html"/>
 </url>
 <url>
-	<loc>https://sfrreader.github.io/donate.html</loc>
+	<loc>https://sfrreader.github.io/en/legal.html</loc>	<changefreq>weekly</changefreq> <priority>0.3</priority>
+	<lastmod>2019-03-29T02:30:00+04:00</lastmod>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/legal.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="en" href="https://sfrreader.github.io/en/legal.html"/>
+</url>
+
+<url>
+	<loc>https://sfrreader.github.io/donate.html</loc>	<changefreq>weekly</changefreq> <priority>1.0</priority>
 	<lastmod>2018-11-23T03:20:00+04:00</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
-        <xhtml:link 
-               rel="alternate"
-               hreflang="ru"
-               href="https://sfrreader.github.io/donate.html"/>
+        <xhtml:link rel="alternate"
+               hreflang="ru" href="https://sfrreader.github.io/donate.html"/>
 </url>
 
 </urlset>
