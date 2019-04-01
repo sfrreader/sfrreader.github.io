@@ -12,7 +12,7 @@
 </url>
 <url>
 	<loc>https://sfrreader.github.io/en/index.html</loc>	<changefreq>daily</changefreq> <priority>1.0</priority>
-	<lastmod>2019-03-29T02:30:00+04:00</lastmod>
+	<lastmod>2019-04-02T00:30:00+04:00</lastmod>
         <xhtml:link rel="alternate"
                hreflang="ru" href="https://sfrreader.github.io/"/>
         <xhtml:link rel="alternate" 
