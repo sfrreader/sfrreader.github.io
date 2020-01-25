@@ -37,10 +37,10 @@ img.logo {
     background-image:url(../images/loc.svg); 
     background-repeat:no-repeat; 
     background-size: 2rem 5rem;
-    color: #00000000;    
+    color: transparent;    
 }
 .loc:hover {
-    color: #00000000;
+    color: transparent;
 } 
 .loc.en {
     background-position-y: -2.7rem;
