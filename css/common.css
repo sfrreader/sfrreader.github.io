@@ -33,6 +33,22 @@ img.logo {
     height: 1.7rem; 
     margin-right: 0.3em; 
 }
+.loc {
+    background-image:url(../images/loc.svg); 
+    background-repeat:no-repeat; 
+    background-size: 2rem 5rem;
+    color: #00000000;    
+}
+.loc:hover {
+    color: #00000000;
+} 
+.loc.en {
+    background-position-y: -2.7rem;
+}
+
+.loc.ru {
+    background-position-y: -.1rem;
+}
 
 table.wide-content {
     overflow-x: auto;
