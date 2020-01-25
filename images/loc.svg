@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 72 136">
+
+  <path fill="#FFFFFF"
+	d="M 0 0 h 72 v 15.5 h -72 z"/>
+  <path fill="#0039A6"
+	d="M 0 15.5 h 72 v 16.5 h -72 z"/>
+  <path fill="#D52B1E"
+	d="M 0 32 h 72 v 16 h -72 z"/>
+
+
+<!-- 
+https://en.wikipedia.org/wiki/Union_Jack#Specification
+#012169 	#C8102E 	#FFFFFF
+-->
+
+<g transform="translate(0 100) scale(1.2)">
+
+ <!-- path fill="#012169" d="M 0 0 h 60 v 30 h -60 z" /-->
+ <path fill="#012169" 
+	d="M 0 0 h 25 v 10 h -25 z
+	M 35 0 h 25 v 10 h -25 z
+	M 0 20 h 25 v 10 h -25 z
+	M 35 20 h 25 v 10 h -25 z" />
+
+ <path fill="#FFFFFF" d="M 0 0 h 6.708 L 60 26.646 L 60 30 h -6.708 L 0 3.354 z"/>
+ <path fill="#FFFFFF" d="M 0 30 h 6.708 L 60 3.354 L 60 0 h -6.708 L 0 26.646 z"/>
+
+ <path fill="#C8102E" 
+	d="M 0 0 l 30 15 h -4.472 L 0 2.236 z 
+	M 60 0 l -30 15 v -2.236 L 55.528 0 z 
+	M 0 30 l 30 -15 v 2.236 L 4.472 30 z 
+	M 60 30 l -30 -15 h 4.472 L 60 27.764 z"/>
+
+ <path fill="#FFFFFF" d="M 0 10 h 25 v -10 h 10 v 10 h 25 v 10 h -25 v 10 h -10 v -10 h -25 z" />
+ <path fill="#C8102E" d="M 0 12 h 27 v -12 h 6 v 12 h 27 v 6 h -27 v 12 h -6 v -12 h -27 z" />
+
+ <!--path fill="#" d="M z" /
+ 6.708  3* sqrt(5)
+ 4.472  2* sqrt(5)
+ 3.354 3/2
+ 2.236  sqrt(5)
+ 1.118 1/2
+-->
+</g>
+</svg>
