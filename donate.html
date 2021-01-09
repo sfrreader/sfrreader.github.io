@@ -34,6 +34,7 @@
 </div>
 
 <div class="container" style="max-width: 40em;">
+    <!-- https://yoomoney.ru/to/410016743804813 -->
 
     <form method="POST" action="https://yoomoney.ru/quickpay/confirm.xml" onsubmit="return onSubmit(event);">
 
@@ -136,10 +137,11 @@ State.prototype = {
     _price : {
         basic: {month: 300, year: 1000},
         ext: {month: 500, year: 3000},
-        test: {month: 2, year: 3}
+        upg: {month: 200, year: 2000},
+        test: {month: 2, year: 3},
     },
 
-    _typeCap: {basic: "базовая", ext: "расширенная", test: "тестовая"},
+    _typeCap: {basic: "базовая", ext: "расширенная", test: "тестовая", upg: "обновление до расширенной"},
     _durCap: {year: "на год", month: "на месяц"},
 
     amount: function() {
@@ -202,13 +204,10 @@ function parsePair(key, value) {
     if (key == 's' || key == '') {
         if (value.length > 0) {
             var el = $get('type');
-            if (value.charAt(0) == 't') {
-                var opt = document.createElement("option");
-                opt.text = 'test';
-                opt.value = 'test';
-                el.add(opt, 2);
-                el.selectedIndex = 2;
-            }
+            if (value.charAt(0) == 't')
+                appendOption('test', 'test', true);
+            else if (value == 'upg' || value == 'upgrade')
+                appendOption('Обновление до расширенной', 'upg', true);
             else
                 el.selectedIndex = value.charAt(0) == 'e' ? 1 : 0;
         }
@@ -221,6 +220,18 @@ function parsePair(key, value) {
         $get('sfr-owner').value = value;
         return;
     }
+}
+
+function appendOption(text, value, select) {
+    var el = $get('type');
+    var opt = document.createElement("option");
+    opt.text = text;
+    opt.value = value;
+
+    var len = el.options.length;
+    el.add(opt, len);
+    if (select)
+    	el.selectedIndex = len;
 }
 
 function onSubmit() {
