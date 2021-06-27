@@ -32,11 +32,13 @@ img.logo {
     width: 1.7rem; 
     height: 1.7rem; 
     margin-right: 0.3em; 
+    
 }
 .loc {
     background-image:url(../images/loc.svg); 
     background-repeat:no-repeat; 
     background-size: 2rem 5rem;
+    margin-left: .5rem;
     color: transparent;    
 }
 .loc:hover {
@@ -58,6 +60,14 @@ table.wide-content {
     table.wide-content {
         display: block;
     }    
+}
+@media (max-width: 1000px) {
+    .d-flex nav {
+	line-height: 40px;
+    }
+    nav a { 
+	margin-right: 0.5em; 
+    }
 }
 
 
