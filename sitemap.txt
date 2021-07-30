@@ -23,7 +23,7 @@
 
 <url>
 	<loc>https://sfrreader.github.io/updates.html</loc>	<changefreq>weekly</changefreq> <priority>1.0</priority>
-	<lastmod>2021-06-26T18:20:00+04:00</lastmod>
+	<lastmod>2021-07-30T4:00:00+04:00</lastmod>
         <xhtml:link rel="alternate"
                hreflang="ru" href="https://sfrreader.github.io/updates.html"/>
         <xhtml:link rel="alternate"
