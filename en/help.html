@@ -37,7 +37,7 @@
 
     <div class="container">
 
-<section id="verification"><h2>Extended licence obtaining</h2>
+<section id="verification"><h2>Obtaining extended licence</h2>
 <p>According to the agreement with SFR System manufacturer, to complicate unauthorised base unit programming and competition vandalism, 
 one willing to obtain his first <b>short-term extended</b> license should provide proof of SFR readout unit ownership.</p>
 <p>To provide a valid proof, please send an image with "SFR Reader" text and SFR readout unit (<a href="../images/sample.jpg">sample</a>) to the srgttv@gmail.com.</p>
@@ -94,7 +94,47 @@ Quantum snails
 <p>SFR Reader would display the number of uploaded teams and proceed to the teams list or show an error message for ill-formed files.</p>
 </section>
 
-<section id="station"><h2>Base unit programming</h2>
+<section id="courses"><h2>Courses</h2>
+<p>SFR Reader supports creating, edititng of the courses of different types like regular, rogaine, other scoring type and some mixed variants.
+To start editing the course choose "Courses" menu item, or just swipe right.</p>
+
+<img src="../images/stage_en.png" class="rounded float-right" alt="stage settings" width="216" height="330"/> 
+<p>Each course consists of at least one stage (the only one usually). Every stage has a type (regular, rogaine, choice), a set of control points, and some other parameters like time limit, 
+minimum number of control points, late period and late penalty (for rogaine type).</p>
+
+<p>Mixed courses contain several stages of regular and choice types. It's impossible to mix stages of rogaine and other types in one course, since rogaine result is counted in points,
+ while other types use time and number of visited control points.</p>
+
+<p>The first stage may contain "Start" control point, and the last stage&nbsp;&mdash; "Finish" control point. In such a case "Start" and "Finish" punches would define athelete's total time.
+In case there would be no "Start" or "Finish" control points in the course, the first (last) punch at the athelete's card would be used as "Start" ("Finish") punch.</p>
+
+<p>The punches "Start" and "Finish" are not accounted, when validating, whether the athlete visited required number of control points (i.e. athlete with "Start", 31 and "Finish" punches is considered to visit 1 control point, not 3.)
+The athletes, who visit less control points than stage's minimum (if any), get DSQ result, with a comment "Too few control points".</p>
+
+</section>
+
+<section id="course"><h2>Result validation</h2>
+<p>If there is a course defined, SFR Reader validates each result, and uses it to show and sort results in a proper way.</p> 
+<p>Result is considered valid, if all stages of the course are passed. The stage is considered passed, if all required CPs are visited (for regular stages&nbsp;&mdash; visited in the correct sequence) 
+and stage time limit is not exceeded (exceeded for no more than grace time for rogain stages).</p>
+
+<p>Possible results are OK (all the stages are passed, no time limits are boken) and different variants of DSQ:</li>
+<ul>
+<li>Too Few Control Points&nbsp;&mdash; the first stage failed is of regular type, and not all of it's CPs are visited in correct sequence, or first failed stage is rogain or scoring type stage, and the athlete 
+		has visited less then minimum required number of CPs</li>
+<li>Time limit&nbsp;&mdash; time limit is exceeded for the first failed stage</li>
+<li>DNF&nbsp;&mdash; the course has "Finish" control point, but there are no such punch in an athlete's card</li>
+<li>DNS&nbsp;&mdash; the course has "Start" control point, but there are no such punch in an athlete's card</li>
+</ul>
+</p>
+
+<p>For every athlete's card read SFR Reader provides general results: total time, and number of visited CPs (points earned), and details: lists of missed CPs, false CPs visited,
+ duplicate CPs for rogain or other scoring type courses.</p>
+
+<p>If the course is changed somehow: CP is added or removed, time limits or even course type is changed, then SFR Reader would revalidate all stored results.</p>
+</section>
+
+<section id="baseunits"><h2>Base unit programming</h2>
 Base units are programmed in 3 steps using a master-card.<br/>
 <ol>
   <li>Choose what to program</li>
