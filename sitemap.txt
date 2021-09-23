@@ -22,16 +22,16 @@
 </url>
 
 <url>
-	<loc>https://sfrreader.github.io/updates.html</loc>	<changefreq>weekly</changefreq> <priority>1.0</priority>
-	<lastmod>2021-08-12T05:00:00+04:00</lastmod>
+	<loc>https://sfrreader.github.io/updates.html</loc>	<changefreq>daily</changefreq> <priority>1.0</priority>
+	<lastmod>2021-09-23T03:45:00+04:00</lastmod>
         <xhtml:link rel="alternate"
                hreflang="ru" href="https://sfrreader.github.io/updates.html"/>
         <xhtml:link rel="alternate"
                hreflang="en" href="https://sfrreader.github.io/en/updates.html"/>
 </url>
 <url>
-	<loc>https://sfrreader.github.io/en/updates.html</loc> 	<changefreq>weekly</changefreq> <priority>1.0</priority>
-	<lastmod>2021-08-12T05:00:00+04:00</lastmod>
+	<loc>https://sfrreader.github.io/en/updates.html</loc> 	<changefreq>daily</changefreq> <priority>1.0</priority>
+	<lastmod>2021-09-23T03:45:00+04:00</lastmod>
         <xhtml:link rel="alternate"
                hreflang="ru" href="https://sfrreader.github.io/updates.html"/>
         <xhtml:link rel="alternate"
