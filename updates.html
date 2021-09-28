@@ -218,5 +218,28 @@ h5 span {
   </nav>
 </div>
     <link href="https://westra.ru/cross/ajax.php?m=css" rel="stylesheet" />
+<script>
+(function() {
+    var hash = window.location.hash;
+    var m = /beta=([a-z0-9_]{1,12})$/i.exec(hash);
+    if (!m || m.length < 2)
+        return;
+
+    var el = document.getElementById('changelog');
+    if (el)
+        el.style.display='none';
+
+    el = document.querySelector('section p');
+    if (el)
+        el.style.display='none';
+
+    el = document.querySelector('section div a');
+    if (el) {
+        el.innerHTML = el.innerHTML.replace('последнюю ', 'бета-');
+        el.setAttribute('href', el.getAttribute('href').replace('sfrReader2', m[1]));
+    }
+    
+})();
+</script>
 </body>
 </html>
