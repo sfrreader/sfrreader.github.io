@@ -213,13 +213,18 @@ h5 span {
 <div class="-fixed-bottom d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mt-4 bg-light border-top box-shadow">
   <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
   <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 bg-success text-light" href="https://westra.ru/cross/sfrReader2.apk">Загрузить</a>
+    <a id="dl" class="p-2 bg-success text-light" href="https://westra.ru/cross/sfrReader2.apk">Загрузить</a>
     <a class="p-2 text-dark" href="legal.html">Юридическая информация</a>
   </nav>
 </div>
-    <link href="https://westra.ru/cross/ajax.php?m=css" rel="stylesheet" />
+
 <script>
 (function() {
+    function hrefReplace(el, newName) {
+        if (el && (newName || '') != '')
+            el.setAttribute('href', el.getAttribute('href').replace('sfrReader2', newName));
+    }
+
     var hash = window.location.hash;
     var m = /beta=([a-z0-9_]{1,12})$/i.exec(hash);
     if (!m || m.length < 2)
@@ -233,13 +238,19 @@ h5 span {
     if (el)
         el.style.display='none';
 
+   
+
     el = document.querySelector('section div a');
     if (el) {
         el.innerHTML = el.innerHTML.replace('последнюю ', 'бета-');
-        el.setAttribute('href', el.getAttribute('href').replace('sfrReader2', m[1]));
+        hrefReplace(el, m[1]);
+        el.style.marginBottom = '4rem';
     }
+    hrefReplace(document.getElementById('dl'), m[1]);
     
 })();
 </script>
+
+    <link href="https://westra.ru/cross/ajax.php?m=css" rel="stylesheet" />
 </body>
 </html>
