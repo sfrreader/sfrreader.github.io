@@ -57,13 +57,18 @@ one willing to obtain his first <b>short-term extended</b> license should provid
 
 To speed the process up one can <a href="#upload">upload list of athletes</a> from a text file (UTF-8 encoded) or SFR Smart Terminal, or SFR Event Centre database, to choose the correct name from the list.
 If the ahtlete in the list has a card number, then SFR reader would automatically use that name for the card.</p>
+<p>To let SFR Reader automatically <a href="selectcourse">assign course</a>, add course name after the team name;</p>
 <p>You can use Excel or any similar program (Open / Libre Office) to prepare the list and save it as CSV-file.</p>
 
-<a href="names.txt">Sample</a>:
+<a href="names.txt">Sample</a>:<!-- // First field (can be omitted, see Forrest Gump above) is a card number, next is a team's name, next one -- the name of the course.-->
 <pre style="background-color: #f0f1f2 !important; padding: 0.5rem;">
-// Line starting with 2 slashes is a comment.
+// Line starting with 2 slashes is 
+// a comment. 
 // The file format is trivial: 
-// One line&nbsp;&mdash; one team
+// One line&nbsp;&mdash; one team, fields 
+// are separated with a semicolon.
+// Team name is requred, whilst
+// other fields are not.
 
 // These teams should be  
 // chosen manually
@@ -71,20 +76,24 @@ The Furious
 Just walking
 Quantum snails
 
+// These, when chosen, would use their 
+// respective courses
+Forrest Gump;1169 days
+Usain Bolt;run 100
+
 // For the following teams
 // SFR Reader would use
 // card #32 for Swamp kids, 
-// and card #34 for John Doe.
-// Text befor semicolon is a card number, 
-// text after it is a team name.
+// and card #34 for John Doe,
+// and even use their courses for the last two.
 
 31;Chasing daylight
 32;Swamp kids
 33;Humpty Dumpty
 34;John Doe
 35;Heather Jones
-36;Salmon - 1
-37;Cheetah - 7</pre>
+36;Salmon - 1;Swim 1 week
+37;Cheetah - 7;Run 20 sec</pre>
 
 </section>
 
@@ -110,15 +119,23 @@ In case there would be no "Start" or "Finish" control points in the course, the 
 
 <p>The punches "Start" and "Finish" are not accounted, when validating, whether the athlete visited required number of control points (i.e. athlete with "Start", 31 and "Finish" punches is considered to visit 1 control point, not 3.)
 The athletes, who visit less control points than stage's minimum (if any), get DSQ result, with a comment "Too few control points".</p>
-
 </section>
+
+<section id="selectcourse"><h2>Assigning course</h2>
+<p>Having any courses added, SFR Reader would try to assign a course to a result, when the athlete's card is read.</p>
+
+<p>If SFR Reader succeeds to <a href="connect">assign a team</a> to the result, a team has a course name assigned, and there is a course with such a name in SFR Reader, this course would be used.
+Otherwise SFR Reader would suggest the shortest course among those, at which the athlete has visited maximal number of control points. </p>
+
+<p>You can always change assigned course manually.</p>
+<section/>
 
 <section id="course"><h2>Result validation</h2>
 <p>If there is a course defined, SFR Reader validates each result, and uses it to show and sort results in a proper way.</p> 
 <p>Result is considered valid, if all stages of the course are passed. The stage is considered passed, if all required CPs are visited (for regular stages&nbsp;&mdash; visited in the correct sequence) 
 and stage time limit is not exceeded (exceeded for no more than grace time for rogain stages).</p>
 
-<p>Possible results are OK (all the stages are passed, no time limits are boken) and different variants of DSQ:</li>
+<p>Possible results are OK (all the stages are passed, no time limits exceeded) and different variants of DSQ:</li>
 <ul>
 <li>Too Few Control Points&nbsp;&mdash; the first stage failed is of regular type, and not all of it's CPs are visited in correct sequence, or first failed stage is rogain or scoring type stage, and the athlete 
 		has visited less then minimum required number of CPs</li>

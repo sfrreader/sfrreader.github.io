@@ -1,19 +1,24 @@
 // Line starting with 2 slashes is a comment.
-// The file format is trivial: one line — one team
+// The file format is trivial: one line — one team. Fields are separated with semicolon.
 
 // These teams should be chosen manually
 The Furious
 Just walking
 Quantum snails
 
+// These, when chosen, would use their respective courses
+Forrest Gump;1169 days
+Usain Bolt;run 100
+
 // For the following teams SFR Reader would use
-// card #32 for Swamp kids, and card #34 for John Doe.
-// Text befor semicolon is a card number, text after the semicolon is a team name.
+// card #32 for Swamp kids, and card #34 for John Doe,
+// and even use their courses for the last two.
+// First field (can be omitted, see Forrest Gump above) is a card number, next is a team's name, next one -- the name of the course.
 
 31;Chasing daylight
 32;Swamp kids
 33;Humpty Dumpty
 34;John Doe
 35;Heather Jones
-36;Salmon - 1
-37;Cheetah - 7
+36;Salmon - 1;Swim 1 week
+37;Cheetah - 7;Run 20 sec
