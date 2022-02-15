@@ -2,24 +2,24 @@
 <html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
-    <title>SFR Reader updates</title>
+    <title>Обновления SFR Reader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="shortcut icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="shortcut icon" type="image/svg+xml" href="images/favicon.svg">
 
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:site_name" content="SFR Reader" />
     <meta property="og:image" content="https://sfrreader.github.io/images/favicon.svg" />
 
     <meta property="og:url" content="https://sfrreader.github.io/updates.html" />
-    <meta property="og:title" content="SFR Reader updates" />
-    <meta property="og:description" content="SFR Reader changelog and latest version download." />
-    <meta name="Description" content="SFR Reader download page and changelog." />
+    <meta property="og:title" content="Обновления SFR Reader" />
+    <meta property="og:description" content="Загрузка последней версии и список изменений SFR Reader." />
+    <meta name="Description" content="Загрузка последней версии и список изменений SFR Reader" />
 
 <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../css/common.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
 <style>
 h3 {margin-top: 4rem;}
 h5 {margin-top: 2.5rem;}
@@ -34,14 +34,14 @@ h5 span {
   </head>
 <body>
     <div class="-fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal"><a class="text-dark" href="index.html"><img class="logo" src="../images/favicon.svg" alt="SFR Reader logo"/>SFR Reader</a></h5>
+      <h5 class="my-0 mr-md-auto font-weight-normal"><a class="text-dark" href="index.html"><img class="logo" src="images/favicon.svg" alt="логотип SFR Reader"/>SFR Reader</a></h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="index.html#features">Features</a>
-        <a class="p-2 text-dark" href="index.html#lic">Pricing</a>
-        <a class="p-2 text-dark" href="../donate.html">Payment</a>
-        <a class="p-2 text-dark" href="help.html">Help</a>
-        <nobr>Contacts:<a class="p-2 text-dark" href="mailto:srgttv@gmail.com">srgttv@gmail.com</a></nobr>
-        <a class="p-2 loc ru" title="Русский" href="../updates.html">Rus</a>
+        <a class="p-2 text-dark" href="index.html#features">Возможности</a>
+        <a class="p-2 text-dark" href="index.html#lic">Цены</a>
+        <a class="p-2 text-dark" href="donate.html">Оплата</a>
+        <a class="p-2 text-dark" href="help.html">Помощь</a>
+        <nobr>Контакты:<a class="p-2 text-dark" href="mailto:srgttv@gmail.com">srgttv@gmail.com</a></nobr>
+        <a class="p-2 loc en" title="English" href="en/updates.html">En</a>
       </nav>
 
     </div>
@@ -50,170 +50,215 @@ h5 span {
 
 <section>
   <div class="mb-3" style="margin-top: 6rem;">
-    <a href="https://westra.ru/cross/sfrReader2.apk" class="btn btn-success btn-lg text-light -p-3">Download latest version!</a>
+    <a href="https://westra.ru/cross/sfrReader2.apk" class="btn btn-success btn-lg text-light -p-3">Загрузить последнюю версию!</a>
   </div>
   <p>SFR Reader ver.&nbsp;0.8.7</p>
 </section>
 
-<section id="changelog"><h4>Changelog</h4>
 
-<h5>v.&nbsp;0.8.7 <span>Feb. 13 2022</span></h5>
+<section id="changelog"><h4>Что изменилось?</h4>
+<!-- 
+
 <ul>
-<li>Fixed: Feb 06 version crashed when launched on Android 12 devices</li>
+<li>Honor и short error response</li>
+<li></li>
+</ul>
+-->
+
+<h5>v.&nbsp;0.8.7 <span>13.02.2022</span></h5>
+<ul>
+<li>Исправление: версия от 6 февраля не запускалась на устройствах под управлением Android 12</li>
 </ul>
 
-<h5>v.&nbsp;0.8.7 <span>Feb. 06 2022</span></h5>
+<h5>v.&nbsp;0.8.7 <span>06.02.2022</span></h5>
 <ul>
-<li>Added: export results to HTML</li>
-<li>Fixed: long total times lacked days (3 days 01:21:14 was showed as 01:21:14 instead of 73:21:14)</li>                                         
-<li>Fixed: sort results by CPs forced rogain results to show not points, but number of visited CPs</li>
+<li>Добавлено: экспорт результатов в HTML</li>
+<li>Исправлено: если общий результат превышал сутки, от него отображались только часы (73:21:14 показывались как 01:21:14)</li>                                         
+<li>Исправлено: при сортировке по КП результаты рогейнов показывались как число взятых КП</li>
 </ul>
 
-<h5>v.&nbsp;0.8.6 <span>Jan 18 2022</span></h5>
+<h5>v.&nbsp;0.8.6 <span>18.01.2022</span></h5>
 <ul>
-<li>Added: edit participants list manually</li>
-<li>Added: warning messages for various incorrect course settings: repeating captions, less CPs than stage's required minimum and others</li>
-<li>Fixed: load participants from EventCentre database could fail sometimes</li>
-<li>Fixed: export results button could disappear until program restart</li>
-<li>Minor UI improvements</li>
+<li>Добавлено: ручное редактирование списка участников</li>
+<li>Добавлено: предупреждения при некорректных настройках дистанций (повторяющиеся названиями, кп на этапе меньше минимума и др.) </li>
+<li>Исправлено: не всегда загружались команды из баз EventCentre</li>
+<li>Исправлено: при очистке результатов кнопка экспорта исчезала и не появлялась до перезапуска программы</li>
+<li>Мелкие улучшения UI</li>
 </ul>
 
-<h5>v.&nbsp;0.8.5 <span>Dec 12 2021</span></h5>
+<h5>v.&nbsp;0.8.5 <span>12.12.2021</span></h5>
 <ul>
-<li>Added: search results by athelte's name, card number; filter results by courses</li>
-<li>Added: filter participants that have no predefined course</li>
-<li>Fixed: distribution of places among athletes with identical results could change unexpecedly</li>
-<li>Fixed: pressing 'back' button when reading card could crash the program</li>
-<li>Do not show repeating dates in the athlete's result</li>
+<li>Добавлено: поиск по результатам и фильтрация результатов по дистанциям</li>
+<li>Добавлено: фильтр по командам без дистанций</li>
+<li>Исправлено: распределение мест между участников с одинаковыми результатами могло меняться без видимых причин</li>
+<li>Исправлено: случайный переход назад во время чтения или записи чипа мог привести к падению</li>
+<li>Не рисовать повторяющиеся даты в карточке результата</li>
 </ul>
 
 
-<h5>v.&nbsp;0.8.4 <span>Oct 25 2021</span></h5>
+<h5>v.&nbsp;0.8.4 <span>25.10.2021</span></h5>
 <ul>
-<li>Added: support for several courses</li>
-<li>Added: validating results against assigned courses, computing athlete's place according to his/her course</li>
-<li>Added: import participants lists with courses from text files and EventCentre databases</li>
-<li>Added: search through the participants, filter them by the course</li>
-<li>Added: minor ui niceties</li>
+<li>Добавлено: поддержка нескольких дистанций</li>
+<li>Добавлено: показ места, занятого участником на своей дистанции</li>
+<li>Добавлено: импорт списков участников с привязкой к дистанциям из текстовых файлов и баз EventCentre</li>
+<li>Добавлено: поиск по списку участников и фильтрация по дистанциям</li>
+<li>Добавлено: разные улучшения UI</li>
 </ul>
 
-<h5>v.&nbsp;0.8.3 <span>Sep 24 2021</span></h5>
+<h5>v.&nbsp;0.8.3 <span>24.09.2021</span></h5>
 <ul>
-<li>Fixed: Adding stage with no control points to the course could crash the program</li>
+<li>Исправление: добавление в дистанцию блока без КП могло приводить к падениям</li>
 </ul>
 
-<h5>v.&nbsp;0.8.2 <span>Sep 23 2021</span></h5>
+<h5>v.&nbsp;0.8.2 <span>23.09.2021</span></h5>
 <ul>
-<li>Fixed: some DSQ results at multi-staged courses could show wrong number of visited control points</li>
-<li>Fixed: reading athletes list from file for the second and next times could fail after some actions</li>
+<li>Исправление: на неправильно взятых дистанциях, состоящих из нескольких этапов, могло ошибочно считаться число взятых КП</li>
+<li>Исправление: иногда не удавалось повторно загрузить из файла список участников</li>
 </ul>
 
-<h5>v.&nbsp;0.8.1 <span>Aug 08 2021</span></h5>
+<h5>v.&nbsp;0.8.1 <span>12.08.2021</span></h5>
 <ul>
-<li>Fixed: courses containing several stages didn't account time between stages</li>
-<li>Added: Records list, Teams list, Course editors and some other screens got better swipe navigation support</li>
+<li>Исправлены ошибки подсчета времени на <a href="help.html#courses">дистанциях</a>, состоящих из нескольких этапов</li>
+<li>Улучшена навигация свайпами между экранами списка результатов, списка команд, редактора дистанций и других</li>
 </ul>
 
-<h5>v.&nbsp;0.8.0 <span>July 31 2021</span></h5>
+<h5>v.&nbsp;0.8.0 <span>31.07.2021</span></h5>
 <ul>
-<li>Long-awaited ability to create <a href="help.html#courses">courses</a> and to validate athlete's cards against courses</li>
+<li>Добавлена возможность создавать <a href="help.html#courses">дистанцию</a> и проверять правильность ее прохождения</li>
 </ul>
 
-<h5>v.&nbsp;0.7.26 <span>July 30 2021</span></h5>
+<h5>v.&nbsp;0.7.26 <span>30.07.2021</span></h5>
 <ul>
-<li>Fixed: files didn't attach when exporting results on Android 10 smartphones</li>
+<li>Исправление: починено прикладывание файлов при экспорте результатов на Android 10</li>
 </ul>
 
-<h5>v.&nbsp;0.7.25 <span>June 26 2021</span></h5>
+<h5>v.&nbsp;0.7.25 <span>26.06.2021</span></h5>
 <ul>
-<li>Added support for SFR U7 base unit's beacon mode, which enables simultaneous work with several active cards (SFR C4 PRO). <br/>
-Attention! This is very power-cosuming mode, which is impossible to detect with regular cards.</li>
-<li>Fixed: when programming base unit, 3 second countdown starts at the beginning of communication with service card, not at the end. Base unit's clock could be late for up to 2 seconds, if programmed with previous versions with slow communicating smartphones.</li>
+<li>Добавлена возможность программировать станции SFR U7 для работы с активными чипами (SFR C4 PRO) в режиме маяка. 
+Будьте осторожны! Это энергозатратный режим, который никак не проявляет себя при работе с обычным чипом.</li>
+<li>Исправление: при программировании станций 3 секунды отсчитываются с момента начала записи в чип, а не окончания. Старый режим на телефонах с низкой скоростью записи мог давать ошибку настройки до 2 секунд.</li>
 </ul>
 
-<h5>v.&nbsp;0.7.23 <span>Nov 24 2020</span></h5>
+<h5>v.&nbsp;0.7.23 <span>24.11.2020</span></h5>
 <ul>
-<li>Fixed: programming base unit with turned off notification sound crashed program</li>
+<li>Исправление: программирование станции при отключенном звуке уведомлений приводило к падениям программы</li>
 </ul>
 
-<h5>v.&nbsp;0.7.22 <span>Aug 8 2020</span></h5>
+<h5>v.&nbsp;0.7.22 <span>08.08.2020</span></h5>
 <ul>
-<li>Fixed: restore scrolling position when returning from athlete's result to the list of results</li>
+<li>Исправление: не терять положение прокрутки в списке результатов при возврате из карточки результата</li>
 </ul>
 
-<h5>v.&nbsp;0.7.21 <span>June 13 2020</span></h5>
+<h5>v.&nbsp;0.7.21 <span>13.06.2020</span></h5>
 <ul>
-<li>Added: loading athletes list from SFR Smart Terminal database</li>
+<li>Добавлена загрузка участников из баз SFR Smart Terminal</li>
 </ul>
 
-<h5>v.&nbsp;0.7.20 <span>Jan 11 2020</span></h5>
+<h5>v.&nbsp;0.7.20 <span>11.01.2020</span></h5>
 <ul>
-<li>Added: sharing athlete's split times</li>
-<li>Fixed: switching to another application an returning back could disable sound notifications</li>
+<li>Добавлено: Экспорт сплитов участника</li>
+<li>Исправление: переключение на другие программы иногда приводило к отключению звуковых подтверждений</li>
 </ul>
 
-<h5>v.&nbsp;0.7.19 <span>Oct 18 2019</span></h5>
+<h5>v.&nbsp;0.7.19 <span>18.10.2019</span></h5>
 <ul>
-<li>Punches after the "Finish" punch do not alter ahtlete's result anymore</li>
-<li>Fixed: opening image or similar file instead of athlete list could crash program</li>
-<li>Fixed: card read errors lacked buzzer sometimes</li>
+<li>Отметки после КП "Финиш" больше не влияют на результат</li>
+<li>Исправление: попытка открыть изображение вместо списка участников приводило к падениям</li>
+<li>Исправление: иногда ошибки чтения чипов не сопровождались звуковым подтверждением</li>
 </ul>
 
-<h5>v.&nbsp;0.7.18 <span>Sept 11 2019</span></h5>
+<h5>v.&nbsp;0.7.18 <span>11.09.2019</span></h5>
 <ul>
-<li>Fixed: removing last result could crash program</li>
+<li>Исправление: удаление последнего результата приводило к падению</li>
 </ul>
 
-<h5>v.&nbsp;0.7.17 <span>Sept 03 2019</span></h5>
+<h5>v.&nbsp;0.7.17 <span>03.09.2019</span></h5>
 <ul>
-<li>Fixed: the checkpoint timestamp, slightly smaller, than previous checkpoint timestamp is now interpreted as a base unit's clock error, and not as very long leg</li>
-<li>Fixed: rotating smartphone while writing athlete's card could result in program crash</li>
+<li>Исправление: отметка на КП чуть раньше, чем на предыдущем интерепретируется как сбой часов на КП, а не сверхдолгий перегон</li>
+<li>Исправление: повороты экрана во время записи чипа могли приводить к падениям</li>
 </ul>
 
-<h5>v.&nbsp;0.7.16 <span>Aug 18 2019</span></h5>
+<h5>v.&nbsp;0.7.16 <span>18.08.2019</span></h5>
 <ul>
-<li>Fixed: success confirmation ringtone could turn off after programming 10+ base units</li>
+<li>Исправление: при программировании большого количества станций самопроизвольно отключалось звуковое подтверждение</li>
 </ul>
 
-<h5>v.&nbsp;0.7.15 <span>May 11 2019</span></h5>
+<h5>v.&nbsp;0.7.15 <span>11.05.2019</span></h5>
 <ul>
-<li>Fixed: teams list could be incorrectly rendered after switching between applications</li>
-<li>Added animations for transitions between results list and team result, and vice versa</li>
-<li>Minor fixes in English locale</li>
+<li>Исправление: после переключений между приложениями список команд мог отобразиться некорректно</li>
+<li>Добавлены анимации переходов от списка к результату команды и обратно</li>
+<li>Небольшие правки в английском интерфейсе</li>
 </ul>
 
-<h5>v.&nbsp;0.7.14 <span>March 28 2019</span></h5>
+<h5>v.&nbsp;0.7.14 <span>28.03.2019</span></h5>
 <ul>
-<li>Fixed: Sending telemetry through poor internet connection could sometimes block NFC transfers for tens of seconds</li>
+<li>Исправление: Отправка телеметрии при плохом интернете могла надолго заблокировать работу с чипами</li>
 </ul>
 
-<h5>v.&nbsp;0.7.13 <span>March 13 2019</span></h5>
+<h5>v.&nbsp;0.7.13 <span>13.03.2019</span></h5>
 <ul>
-<li>English locale added</li>
-<li>System area background color fixed</li>
+<li>Добавлена английская версия интерфейса</li>
+<li>Исправлена ошибка, из-за которой иконки в системной области сливались с фоном. Ошибка наблюдалась на андроидах с 5-ой по 8-ую версии</li>
 </ul>
 
-<h5>v.&nbsp;0.7.12 <span>Dec 8 2018</span></h5>
+<h5>v.&nbsp;0.7.12 <span>8.12.2018</span></h5>
 <ul>
-<li>Phones without NFC support should show relevant error message</li>
+<li>Починена сортировка "как сканировали"</li>
+<li>Корректное сообщение при запуске на телефонах без NFC</li>
 </ul>
 
-<h5>v.&nbsp;0.5.5 <span>May 4 2018</span></h5>
+<h5>v.&nbsp;0.7.11 <span>27.11.2018</span></h5>
 <ul>
-<li>Fixed: Android 8.0 users couldn't obtain license</li>
+<li>Значительно ускорен экспорт результатов</li>
+<li>Исправлена ошибка при экспорте, возникавшая если на дистанции не использовалось КП "Старт"</li>
+<li>Сопровождаем ошибки звуковым сигналом</li>
 </ul>
+
+<h5>v.&nbsp;0.7.10 <span>16.11.2018</span></h5>
+<ul>
+<li>Добавлена возможность не спрашивать название команды при сканировании чипа</li>
+<li>Исправлено падение, возникавшее при недоступной службе NFC</li>
+<li>Изменена загрузка обновлений, чтобы Chrome не бокировал ее, как подозрительную</li>
+</ul>
+
+<h5>v.&nbsp;0.7.9 <span>9.11.2018</span></h5>
+<ul>
+<li>Добавлено уведомление об истекающей лицензии</li>
+<li>В 2 раза ускорено чтение сохраненных результатов. Скорость записи перестала зависеть от количества уже считанных результатов</li>
+</ul>
+
+<h5>v.&nbsp;0.7.8 <span>2.11.2018</span></h5>
+<ul>
+<li>Поддержана оплата лицензий на сайте</li>
+<li>Добавлено автоматическое обновление лицензии</li>
+<li>На широких экранах с двухпанельной раскладкой раcширен список команд</li>
+</ul>
+
+<h5>v.&nbsp;0.7.7 <span>23.10.2018</span></h5>
+<ul>
+<li>Исправлена ошибка подсчета времени, возникавшая когда между стартом и финишем не было промежуточных КП (0 КП за 10:47)</li>
+<li>Добавлена поддержка специального КП №250&nbsp;&mdash; &laquo;конец отсечки&raquo;</li>
+<li>Уведомление об истекшей лицензии сделано более заметным</li>
+<li>Не пересохраняем результаты, если они не изменились</li>
+</ul>
+
+<h5>v.&nbsp;0.5.5 <span>4.05.2018</span></h5>
+<ul>
+<li>Исправлена ошибка, из-за которой пользователи на Android 8.0 не могли получить лицензию</li>
+</UL>
 
 </section>
 
 </div>
 
-  <div class="-fixed-bottom d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mt-4 bg-light border-top box-shadow">
-    <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
-    <nav class="my-2 my-md-0 mr-md-3">
-      <a id="dl" class="p-2 bg-success text-light" href="https://westra.ru/cross/sfrReader2.apk">Download</a>
-      <a class="p-2 text-dark" href="legal.html">Legal information</a>
-    </nav>
-  </div>
+
+<div class="-fixed-bottom d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mt-4 bg-light border-top box-shadow">
+  <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a id="dl" class="p-2 bg-success text-light" href="https://westra.ru/cross/sfrReader2.apk">Загрузить</a>
+    <a class="p-2 text-dark" href="legal.html">Юридическая информация</a>
+  </nav>
+</div>
 
 <script>
 (function() {
@@ -239,7 +284,7 @@ Attention! This is very power-cosuming mode, which is impossible to detect with 
 
     el = document.querySelector('section div a');
     if (el) {
-        el.innerHTML = el.innerHTML.replace('latest ', 'beta-');
+        el.innerHTML = el.innerHTML.replace('последнюю ', 'бета-');
         hrefReplace(el, m[1]);
         el.style.marginBottom = '4rem';
     }
