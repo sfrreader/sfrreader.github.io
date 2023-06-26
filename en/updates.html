@@ -51,12 +51,20 @@ h5 span {
   <div class="mb-3" style="margin-top: 6rem;">
     <a href="https://westra.ru/cross/sfrReader2.apk" class="btn btn-success btn-lg text-light -p-3">Download latest version!</a>
   </div>
-  <p>SFR Reader ver.&nbsp;0.8.12</p>
+  <p>SFR Reader ver.&nbsp;0.8.13</p>
 </section>
 
 <section id="changelog"><h4>Changelog</h4>
 
-<h5>v.&nbsp;0.8.12 <span>15.04.2023</span></h5>
+<h5>v.&nbsp;0.8.13 <span>June 26.2023</span></h5>
+<ul>
+<li>Fixed: some marks could have been misinterpeted as "wrong order" or "duplicate", if the athlete's card conatined more punches, than there were CPs in a regular course</li>
+<li>Fixed: late penalties at rogains were added 59 seconds later, than it should</li>
+<li>Improved stage properties' editing UX, including work with empty values</li>
+<li>Fixed: fast tapping could activate several modal dialogs at once</li>
+</ul>
+
+<h5>v.&nbsp;0.8.12 <span>April 15 2023</span></h5>
 <ul>
   <li>Added: owners of the basic and extended licenses can now upload teams from Excel's native <a href="names.xlsx" download>xlsx-files</a></li>
 </ul>
@@ -67,9 +75,8 @@ h5 span {
 <li>Added support for tuning <a href="https://youtu.be/UhtYVuZCKks?t=993s" target="_blank">delay between sequential punches</a> on one card, feature added to the modern punching units
 (it allows to add penalty laps to the course with just one punching unit)</li>
 <li>Added: loading courses from OCAD files doesn't require saving intermediate file anymore</li>
-<li>Clarified error messages in OCAD's courses parser</li>
+<li>Clarified error messages in the OCAD's courses parser</li>
 </ul>
-
 
 <h5>v.&nbsp;0.8.10 <span>Sept 24 2022</span></h5>
 <ul>
@@ -79,7 +86,7 @@ h5 span {
 
 <h5>v.&nbsp;0.8.9 <span>April 25 2022</span></h5>
 <ul>
-<li>Added: load courses from OCAD txt files</li>
+<li>Added: <a href="help.html#upload_courses">load courses</a> from OCAD txt files</li>
 <li>Fixed: rare crashes when working with thousands teams, records or courses</li>
 <li>Speed loading courses and teams up</li>
 </ul>
@@ -119,11 +126,9 @@ h5 span {
 <li>Do not show repeating dates in the athlete's result</li>
 </ul>
 
-<div id="earlier">
-
 <h5>v.&nbsp;0.8.4 <span>Oct 25 2021</span></h5>
 <ul>
-<li>Added: support for several courses</li>
+<li>Added: support for several <a href="help.html#courses">courses</a></li>
 <li>Added: validating results against assigned courses, computing athlete's place according to his/her course</li>
 <li>Added: import participants lists with courses from text files and EventCentre databases</li>
 <li>Added: search through the participants, filter them by the course</li>
@@ -152,6 +157,9 @@ h5 span {
 <li>Long-awaited ability to create <a href="help.html#courses">courses</a> and to validate athlete's cards against courses</li>
 </ul>
 
+
+<button class="btn btn-outline-secondary" type="button" onclick="this.style.display='none'; document.getElementById('earlier').style.display='';">Previous changes</button>
+<div id="earlier" style="display: none">
 <h5>v.&nbsp;0.7.26 <span>July 30 2021</span></h5>
 <ul>
 <li>Fixed: files didn't attach when exporting results on Android 10 smartphones</li>
