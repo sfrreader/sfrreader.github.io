@@ -34,6 +34,13 @@ img.logo {
     margin-right: 0.3em; 
     
 }
+img.logo-sm { 
+    width: 1.6rem; 
+    height: 1.6rem; 
+    margin-right: 0.3em; 
+    
+}
+
 .loc {
     background-image:url(../images/loc.svg); 
     background-repeat:no-repeat; 
@@ -54,6 +61,16 @@ img.logo {
 
 table.wide-content {
     overflow-x: auto;
+}
+
+th.yes {
+    content:'+';
+    color: #28a745 !important;
+    line-height: 1;
+    font-size: x-large; 	
+}
+th.yes:before {
+	content:'+';
 }
     
 @media (max-width: 768px) {
